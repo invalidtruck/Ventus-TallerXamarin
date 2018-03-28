@@ -1,0 +1,1 @@
+C:\Users\VENTUS\source\repos\MasterDetailApp\MasterDetailApp\MasterDetailApp.UWP\MasterDetailApp.UWP.csproj;x86

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailApp.Views.NewPersonaPage"
+             Title="Nueva Persona">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre" FontSize="Medium" />
+            <Entry Text="{Binding Persona.Nombre}" FontSize="Small" />
+            <Label Text="Apellido" FontSize="Medium" />
+            <Entry Text="{Binding Persona.Apellido}" FontSize="Small" />
+            <Label Text="Pais" FontSize="Medium" />
+            <Editor Text="{Binding Persona.Pais}" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

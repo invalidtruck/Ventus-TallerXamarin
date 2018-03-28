@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App3.Views"
+             BackgroundImage="back2.jpg"
+             x:Class="App3.Views.Form">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="70*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Image Source="man.png" Aspect="AspectFit" Grid.Column="0" Grid.Row="0"></Image>
+            <!--<Label Text="Nombre" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="#A1A1A1"
+                   BackgroundColor="Green"
+                   FontSize="24"
+                   x:Name="lblName"
+                   Grid.Column="0"
+                   Grid.Row="0"
+            /><Label Text="Soy un nuevo label" Grid.Row="0" Grid.Column="1">
+            </Label>-->
+            <Entry x:Name="txtNombre" 
+                   Placeholder="Escribir tu Nombre" 
+                   PlaceholderColor="White"
+                   TextColor="White"
+                   Text="" Grid.Row="0" Grid.Column="1"></Entry>
+
+            <Label Text="Apellido" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="#FFF"
+                   BackgroundColor="Green"
+                   FontSize="24"
+                   x:Name="lblLastName"
+                   Grid.Column="0"
+                   Grid.Row="1"
+            />
+            <!--<Label Text="Soy un nuevo label" Grid.Row="0" Grid.Column="1">
+            </Label>-->
+            <Entry x:Name="txtLastName"
+                   PlaceholderColor="White"
+                   Placeholder="Escribir tu Apellido"  TextColor="White"
+                   Text="" Grid.Row="1" Grid.Column="1"></Entry>
+
+            <Label Text="Pais" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="#A1A1A1"
+                   BackgroundColor="Green"
+                   FontSize="24"
+                   x:Name="LblPais"
+                   Grid.Column="0"
+                   Grid.Row="2"
+            />
+            <!--<Label Text="Soy un nuevo label" Grid.Row="0" Grid.Column="1">
+            </Label>-->
+            <Entry x:Name="txtCountry" 
+                   PlaceholderColor="White"
+                   Placeholder="Escribe tu pais" Keyboard="Text" 
+                   TextColor="White"
+                   Text="" Grid.Row="2" Grid.Column="1"></Entry>
+        </Grid>
+        <Button TextColor="White" BorderColor="White" 
+                BorderWidth="10"
+                BorderRadius="50"
+                Text="Presioname!" 
+                Clicked="Button_OnClicked" 
+                BackgroundColor="Magenta">
+
+        </Button>
+    </StackLayout>
+
+
+</ContentPage>

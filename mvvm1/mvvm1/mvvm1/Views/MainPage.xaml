@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:mvvm1.Views"
+             x:Class="mvvm1.Views.MainPage">
+    <StackLayout>
+        <Entry Text="{Binding Nombre, Mode=TwoWay}"
+               Placeholder="Escribe tu Nombre"
+           VerticalOptions="Center"
+           HorizontalOptions="FillAndExpand"
+           ></Entry>
+        <Entry Text="{Binding Apellido, Mode=TwoWay}"
+               Placeholder="Escribe tu Apellido"
+               VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand"
+        ></Entry>
+        <Entry Text="{Binding Email, Mode=TwoWay}"
+               Placeholder="Escribe tu Correo"
+               VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand"
+        ></Entry>
+        <Label Text="{Binding DatosCompletos}" 
+           VerticalOptions="Center" 
+           HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Datos por Default"  Command="{Binding MyCommand}"></Button>
+    </StackLayout>
+</ContentPage>
